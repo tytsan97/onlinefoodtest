@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme(style="whitegrid")
+df=pd.read_csv("onlinefood.csv")
 buying_again_data = df.query("Output == 'Yes'")
 buying_again_data.head()
 gender = buying_again_data["Gender"].value_counts()
